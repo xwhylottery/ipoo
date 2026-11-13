@@ -1,0 +1,19 @@
+name: TapMaster
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  TapMaster:
+    type: application
+    platform: iOS
+    sources:
+      - ContentView.swift
+      - TapMasterApp.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.tapmaster
+        PRODUCT_NAME: TapMaster
+        INFOPLIST_KEY_CFBundleDisplayName: Tap Master
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1,2"
